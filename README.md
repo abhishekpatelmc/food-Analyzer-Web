@@ -14,3 +14,5 @@
 - React 
 - Machine Learning 
 
+## Intrested in building Flutter App 
+[FLutter Project food-Analyzer-App](https://github.com/abhishekpatelmc/food-Analyzer-App)
