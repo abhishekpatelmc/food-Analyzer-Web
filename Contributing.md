@@ -1,78 +1,92 @@
-# Contributing Guidelines to Food Analyzer Web ✨
+# Contributing Guidelines for Food Analyzer Web ✨
 
-🎉 First off, thanks for taking the time to contribute to this project! 🎉
+When contributing to this repository, please first discuss the change you wish to make via issue with the maintainers of this repository before making a change.
 
-## Our Pledge 🤝
+Please note we have a [code of conduct](CODE_OF_CONDUCT.md), please follow it in all your interactions with the project.
 
-In the interest of fostering an open and welcoming environment, we as
-contributors and maintainers pledge to making participation in our project and
-our community a harassment-free experience for everyone, regardless of age, body
-size, disability, ethnicity, sex characteristics, gender identity and expression,
-level of experience, education, socio-economic status, nationality, personal
-appearance, race, religion, or sexual identity and orientation.
+Are we missing any of your favorite features, which you think you can add to it ❓
+We invite you to contribute to this project and improve it further.🤗
 
-## Our Standards 😎
+To start contributing, follow the below guidelines:
 
-Examples of behavior that contributes to creating a positive environment
-include:
+**🌟** Star🌟the project to bookmark and appreciate the work.
 
-- Using welcoming and inclusive language
-- Being respectful of differing viewpoints and experiences
-- Gracefully accepting constructive criticism
-- Focusing on what is best for the community
-- Showing empathy towards other community members
+## Pull Request Process
 
-Examples of unacceptable behavior by participants include:
+1. Ensure any install or build dependencies are removed before the end of the layer when doing a
+   build. Add only relevant files to commit and ignore the rest to keep the repo clean.
+2. Update the README.md with details of changes to the interface, this includes new environment
+   variables, exposed ports, useful file locations and container parameters.
+3. You should request review from the maintainers once you submit the Pull Request.
 
-- The use of sexualized language or imagery and unwelcome sexual attention or
-  advances
-- Trolling, insulting/derogatory comments, and personal or political attacks
-- Public or private harassment
-- Publishing others' private information, such as a physical or electronic
-  address, without explicit permission
-- Other conduct which could reasonably be considered inappropriate in a
-  professional setting
+## Instructions
 
-## Our Responsibilities 🚀
+**👀** Take a look at the existing [issues](https://github.com/sameersrivastava13/Vaccine-Tracker-App/issues) or create your own issues. Wait for the Issue to be assigned to you after which you can start working on it.
 
-Project maintainers are responsible for clarifying the standards of acceptable
-behavior and are expected to take appropriate and fair corrective action in
-response to any instances of unacceptable behavior.
+- Git Workflow
 
-Project maintainers have the right and responsibility to remove, edit, or
-reject comments, commits, code, wiki edits, issues, and other contributions
-that are not aligned to this Code of Conduct, or to ban temporarily or
-permanently any contributor for other behaviors that they deem inappropriate,
-threatening, offensive, or harmful.
+```bash
+## Step 1: Fork Repository
 
-## Scope 💡
+## Step 2: Git Set Up & Download
+# Clone the repo
+$ git clone https://github.com/<User-Name>/<Repo-Name>.git
+# Add upstream remote
+$ git remote add upstream https://github.com/abhishekpatelmc/food-Analyzer-Web.git
+# Fetch and merge with upstream/master
+$ git fetch upstream
+$ git merge upstream/master
+### or
+$ git pull upstream master
 
-This Code of Conduct applies both within project spaces and in public spaces
-when an individual is representing the project or its community. Examples of
-representing a project or community include using an official project e-mail
-address, posting via an official social media account, or acting as an appointed
-representative at an online or offline event. Representation of a project may be
-further defined and clarified by project maintainers.
+## Step 2: Create and Publish Working Branch
+$ git checkout -b <type>/<issue|issue-number>/{<additional-fixes>}
+$ git push origin <type>/<issue|issue-number>/{<additional-fixes>}
 
-## Enforcement 🙂
+## Types:
+# wip - Work in Progress; long term work; mainstream changes;
+# feat - New Feature; future planned; non-mainstream changes;
+# bug - Bug Fixes
+# exp - Experimental; random experiemntal features;
+```
 
-Instances of abusive, harassing, or otherwise unacceptable behavior may be
-reported by contacting the project team at webwiznitr@gmail.com. All
-complaints will be reviewed and investigated and will result in a response that
-is deemed necessary and appropriate to the circumstances. The project team is
-obligated to maintain confidentiality with regard to the reporter of an incident.
-Further details of specific enforcement policies may be posted separately.
+- On Task Completion:
 
-Project maintainers who do not follow or enforce the Code of Conduct in good
-faith may face temporary or permanent repercussions as determined by other
-members of the project's leadership.
+```bash
+## Committing and pushing your work
+# Ensure branch
+$ git branch
+# Fetch and merge with upstream/master
+$ git fetch upstream
+$ git merge upstream/master
+# Add untracked files
+$ git add .
+# Commit all changes with appropriate commit message and description
+$ git commit -m "your-commit-message" -m "your-commit-description"
+# Fetch and merge with upstream/master again
+$ git fetch upstream
+$ git merge upstream/master
+# Push changes to your forked repository
+$ git push origin <type>/<issue|issue-number>/{<additional-fixes>}
 
-## Attribution 😇
+## Creating the PR using GitHub Website
+# Create Pull Request from <type>/<issue|issue-number>/{<additional-fixes>} branch in your forked repository to the master branch in the upstream repository
+# After creating PR, add a Reviewer (Any Admin) and yourself as the assignee
+# Link Pull Request to appropriate Issue, or Project+Milestone (if no issue created)
+# IMPORTANT: Do Not Merge the PR unless specifically asked to by an admin.
+```
 
-This Code of Conduct is adapted from the [Contributor Covenant][homepage], version 1.4,
-available at https://www.contributor-covenant.org/version/1/4/code-of-conduct.html
+- After PR Merge
 
-[homepage]: https://www.contributor-covenant.org
+```bash
+# Delete branch from forked repo
+$ git branch -d <type>/<issue|issue-number>/{<additional-fixes>}
+$ git push --delete origin <type>/<issue|issue-number>/{<additional-fixes>}
+# Fetch and merge with upstream/master
+$ git checkout master
+$ git pull upstream
+$ git push origin
+```
 
-For answers to common questions about this code of conduct, see
-https://www.contributor-covenant.org/faq
+- Always follow [commit message standards](https://chris.beams.io/posts/git-commit/)
+- About the [fork-and-branch workflow](https://blog.scottlowe.org/2015/01/27/using-fork-branch-git-workflow/)
