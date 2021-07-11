@@ -1,0 +1,55 @@
+{
+  "name": "food-analyzer-web",
+  "version": "1.0.0",
+  "description": " A web portal which detect what kind of food , what ingredients are used, what is the calories present in that food and many more features similar to these. This is a Machine  Learning project combined with React as frontend",
+  "private": true,
+  "main": "index.js",
+  "babel": {
+    "presets": [
+      "@babel/preset-env",
+      "@babel/preset-react"
+    ]
+  },
+  "dependencies": {
+    "eslint": "^5.16.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-flip-move": "^3.0.4",
+    "react-scripts": "^1.1.5",
+    "react-syntax-highlighter": "^7.0.4"
+  },
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/snehaM2210/food-Analyzer-Web.git"
+  },
+  "author": "Sneha Mallik",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/snehaM2210/food-Analyzer-Web/issues"
+  },
+  "homepage": "https://github.com/snehaM2210/food-Analyzer-Web#readme",
+  "devDependencies": {
+    "@babel/core": "^7.14.6",
+    "@babel/plugin-syntax-dynamic-import": "^7.8.3",
+    "@babel/plugin-transform-runtime": "^7.14.5",
+    "@babel/preset-env": "^7.14.7",
+    "@babel/preset-react": "^7.14.5",
+    "@babel/runtime": "^7.14.6",
+    "babel-eslint": "^10.1.0",
+    "babel-loader": "^8.2.2",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-jest": "^24.3.6",
+    "webpack": "^5.44.0",
+    "webpack-cli": "^4.7.2",
+    "webpack-dev-server": "^3.11.2"
+  }
+}
